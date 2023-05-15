@@ -1,0 +1,245 @@
+body {
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  background-color: #F6F6F6;
+}
+
+.nav {
+  background-color: white;
+}
+
+.logo {
+  position: relative;
+  left: 26%;
+  right: 9.64%;
+  top: 0%;
+  bottom: -22.22%;
+  margin-top: 14px;
+}
+
+.logo-size {
+  width: 162px;
+  font-size: 30px;
+  line-height: 44px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fleche {
+  width: 17px;
+  height: 16px;
+  position: relative;
+  bottom: 10px;
+  left: 13px;
+  color: black;
+}
+
+.imgheader {
+  width: 100%;
+  height: 275px;
+  position: relative;
+}
+
+.menu {
+  position: relative;
+  bottom: 55px;
+  border-radius: 15px;
+  background-color: #F6F6F6;
+}
+
+.title {
+  position: relative;
+  left: 17px;
+}
+
+.title--size {
+  font-family: "Shrikhand";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 41px;
+}
+
+.titleentrees {
+  position: relative;
+  top: 15px;
+  left: 13px;
+  padding-bottom: 10px;
+}
+
+.titleentrees--size {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.blueline {
+  border: 3px solid #99E2D0;
+  width: 40px;
+  position: relative;
+  left: 13px;
+}
+
+.menucard {
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  border-radius: 15.0431px;
+  position: relative;
+  left: 13px;
+  background-color: white;
+  text-overflow: ellipsis;
+  z-index: 2;
+}
+.menucard:hover {
+  transition: all 750ms ease;
+}
+
+.menucard--size {
+  width: 92%;
+  height: 69px;
+}
+
+.slide {
+  background: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  width: 59px;
+  height: 69px;
+  position: absolute;
+  left: 286px;
+  bottom: 0.1%;
+  z-index: -1;
+}
+
+.check {
+  position: absolute;
+  top: 24px;
+  left: 19px;
+  color: white;
+}
+
+.titlemenucard {
+  position: relative;
+  left: 15px;
+  top: 12px;
+}
+
+.titlemenucard--size {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.descmenucard {
+  position: relative;
+  left: 15px;
+  bottom: 5px;
+}
+
+.descmenucard--size {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15.0431px;
+  line-height: 18px;
+  width: 90%;
+}
+
+.count {
+  position: absolute;
+  left: 270px;
+  bottom: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15.0431px;
+  line-height: 18px;
+}
+
+.btncommande {
+  position: relative;
+  top: 40px;
+  left: 95px;
+}
+
+.btncommande--size {
+  width: 186px;
+  height: 50px;
+}
+
+.btncommande--wide {
+  border-radius: 25px;
+  border: none;
+}
+
+.btncommande--write {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
+}
+
+.btncommande--color {
+  background: linear-gradient(193.33deg, #FF79DA -11.44%, #9356DC 123.93%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.logofooter {
+  width: 137px;
+  height: 27px;
+  filter: brightness(100);
+  position: relative;
+  left: 25px;
+  top: 22px;
+}
+
+.footermenu {
+  background-color: #353535;
+  color: white;
+  width: 100%;
+  height: 210px;
+  position: relative;
+  top: 30px;
+}
+
+.idfooter {
+  position: relative;
+  left: 25px;
+}
+
+.iconefooter1 {
+  position: relative;
+  top: 55px;
+}
+
+.iconefooter2 {
+  position: relative;
+  top: 70px;
+}
+
+.descfooter {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  position: relative;
+  left: 25px;
+  bottom: 16px;
+}
+
+.contact {
+  text-decoration: none;
+  color: white;
+}
+
+/*# sourceMappingURL=mobilemenu.css.map */

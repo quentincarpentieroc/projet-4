@@ -1,0 +1,11 @@
+{
+  "name": "writting-saas",
+  "version": "1.0.0",
+  "description": "Sass projet-4",
+  "main": "index.js",
+  "scripts": {
+    "sass":"sass --watch ./sass/mobilemenu.scss:./css/mobilemenu.css"
+  },
+  "author": "qcarpentier",
+  "license": "ISC"
+}

@@ -1,0 +1,396 @@
+$cartcolo: #99E2D0;
+$newcolor: #008766;
+$btncolor: #9356DC;
+
+
+
+body{
+    max-width: 768px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0px;
+}
+
+:root{
+    --degrade: 
+}
+
+
+.header{
+    height: 63px;
+    width: 100%;
+}
+
+.logo{
+    position:relative;
+    left: 26%;
+    right: 9.64%;
+    top: 0%;
+    bottom: -22.22%;
+    margin-top: 14px;
+        &--size{
+        width:162px;
+        font-size: 30px;
+        line-height: 44px;
+    }
+}
+
+.iconelocation{
+    color:#353535;
+    position: relative;
+    top: 18px;
+    left:28%;
+}
+
+.location{
+    display: flex;
+    flex-direction: row;
+    background-color: #EAEAEA;
+    margin-left: 0px;
+        &--size{
+        width:100%;
+        height: 50px;
+        gap:17px;
+    }
+}
+
+.title-location{
+    position: relative;
+    left: 30%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+}
+
+.presentation{
+    background-color: #F7F7F7;
+    height: 280px;
+    width: 100%;
+    position: relative;
+    bottom: 22px;
+}
+
+.titleh1{
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    padding-top:12px;
+}
+
+.intro{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.btnexplorer{
+    position:relative;
+    left: 19%;
+        &--size{
+            width: 218px;
+            height: 50px;
+    }
+        &--wide{
+            border-radius: 25px;
+            border:none;
+        
+    }
+        &--write{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color:white;
+    }
+        &--color{
+            background: linear-gradient(193.33deg, #FF79DA -11.44%  , #9356DC 123.93%);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    }
+        &:hover{
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #FF79DA -5.2%, #9356DC 110.74%);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+            border-radius: 25px;
+    }
+}
+
+
+.fonction{
+    margin-left: 30px;
+    display:flex;
+    flex-direction: column;
+    gap:17px;
+    
+}
+
+.titlefonction{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.iconefonction{
+    color: $btncolor;
+    position: relative;
+    left:14%;
+    bottom:10px;
+}
+
+.numberfonction{
+    background-color: $btncolor;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    border:none;
+    position: relative;
+    top:8px;
+    right: 9px;
+}
+
+.number{
+    color: white;
+    position: relative;
+    left:8px;
+    top:4px;
+    &--size{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14.1818px;
+        line-height: 17px;
+    }
+}
+
+
+.btnfonction{
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    width: 322.49px;
+    height: 72.38px;
+}
+
+
+.idbtn{
+    position: relative;
+    left: 85px;
+    bottom:45px;
+    &--size{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+.restaurants{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    top:110px;
+    left:17px;
+    gap:18px;
+}
+
+.lien{
+    text-decoration: none;
+    color: black;
+}
+
+.titlerestaurants{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    position: relative;
+    top: 75px;
+    left: 14px;
+}
+
+.restaurantscard{
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width:340px;
+    height:235px;
+    
+}
+
+.imgcard{
+    width:100%;
+    height: 174px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.new{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    background-color: #99E2D0;
+    width: 80px;
+    height: 29px;
+    position: relative;
+    bottom:175px;
+    left:245px;
+    &--size{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #008766;
+        text-align: center;
+        position: relative;
+        top: 7px;
+    }
+}
+
+
+.titlecard{
+    position:relative;
+    bottom:15px;
+    left: 13px;
+    &--size{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
+.titlecards{
+    position:relative;
+    bottom: 60px;
+    left:13px;
+}
+
+.descmodif{
+    position:relative;
+    bottom: 45px;
+}
+
+.desccard{
+    position: relative;
+    bottom: 30px;
+    left:14px;
+    text-decoration: none;
+    &--size{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 20px;
+    }
+}
+
+.heart{
+    display: flex;
+    justify-content: flex-end;
+    position:relative;
+    bottom: 75px;
+    right: 4%;
+    cursor: pointer;
+    &--empty{
+        position:absolute;
+    }
+    &--full{
+        position:absolute;
+        opacity: 0;
+        background: linear-gradient(#FF79DA, #9356DC);
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: all 400ms;
+    }
+    &:hover &--full{
+        opacity: 1;
+    }
+    &hover &--empty{
+        opacity: 0;
+    }
+}
+
+.hearts{
+    display: flex;
+    justify-content: flex-end;
+    position:relative;
+    bottom: 115px;
+    right: 4%;
+    cursor: pointer;
+    &--empty{
+        position:absolute;
+    }
+    &--full{
+        position:absolute;
+        opacity: 0;
+        background: linear-gradient(#FF79DA, #9356DC);
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: all 400ms;
+    }
+    &:hover &--full{
+        opacity: 1;
+    }
+    &hover &--empty{
+        opacity: 0;
+    }
+}
+
+.footer{
+    background-color: #353535;
+    color:white;
+    position: relative;
+    top: 175px;
+    width: 100%;
+    height: 210px; 
+}
+
+.logofooter{
+    width:137px;
+    height: 27px;
+    filter: brightness(100);
+    position:relative;
+    left:25px;
+    top:22px;
+}
+
+.idfooter{
+    position: relative;
+    left: 25px;
+}
+
+.iconefooter1{
+    position: relative;
+    top: 55px;
+}
+
+.iconefooter2{
+    position: relative;
+    top:70px;
+}
+.descfooter{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    position:relative;
+    left: 25px;
+    bottom:14px;
+}
+
+.contact{
+    text-decoration: none;
+    color:white;
+}
+/******** Mixins *********/
+
+

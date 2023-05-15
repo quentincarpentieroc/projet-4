@@ -5,36 +5,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ohmyfood</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="./css/dekstop.css">
 </head>
 
 <body>
-    <header>
-        <img src="./images/logo/ohmyfood.png">
+    <header class="header">
+        <img class="logo logo--size" src="./images/logo/ohmyfood.png">
     </header>
     <main>
-        <section>
-            <i class="fa-solid fa-location-dot"></i>
-            <p>Paris, Belleville</p>
+        <section class="location location--size">
+            <div class="iconelocation">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <p class="title-location">Paris, Belleville</p>
         </section>
-        <section>
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Décrouvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <input type="button" value="Explorer nos restaurants">
+        <section class="presentation">
+            <h1 class="titleh1">Réservez le menu qui vous convient</h1>
+            <p class="intro">Décrouvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <input class="btnexplorer btnexplorer--size btnexplorer--wide btnexplorer--write btnexplorer--color" type="button" value="Explorer nos restaurants">
         </section>
-        <section>
-            <h2>Fonctionnement</h2>
-                <div>
-                    <i class="fa-solid fa-circle-1"></i>
+        <section class="fonction">
+            <h2 class="titlefonction">Fonctionnement</h2>
+            <article class="btnfonction">
+                <div class="numberfonction">
+                    <p class="number number--size">1</p>
                 </div>
-                <i class="fa-sharp fa-solid fa-mobile-screen-button"></i>
-                <p>Choisissez un restaurant</p>
+                <div class="iconefonction">
+                    <i class="fa-sharp fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <p class="idbtn idbtn--size">Choisissez un restaurant</p>
+            </article>
+            <article class="btnfonction">
+                <div class="numberfonction">
+                    <p class="number number--size">2</p>
+                </div>
+                <div class="iconefonction">
+                    <i class="fa-solid fa-list-ul"></i>
+                </div>
+                <p class="idbtn idbtn--size">Composez votre menu</p>
+            </article>
+            <article class="btnfonction">
+                <div class="numberfonction">
+                    <p class="number number--size">3</p>
+                </div>
+                <div class="iconefonction">
+                    <i class="fa-sharp fa-solid fa-store"></i>
+                </div>
+                <p class="idbtn idbtn--size">Dégustez au restaurant</p>
+            </article>
         </section>
+        <h2 class="titlerestaurants">Restaurants</h2>
+        <section class="restaurants">
+                <a class="lien" href="Menu-Délice.html">
+                <article class="restaurantscard">
+                    <img class="imgcard" src="./images/restaurants/jay-wennington.jpg" alt="Image montrant une assiette, des couverts, des verres et du pain">
+                    <div class="new"><p class="new--size">Nouveau</p></div>
+                    <h3 class="titlecards titlecard--size">La palette du goût</h3>
+                    <div class="descmodif"><p class="desccard desccard--size">Ménilmontant</p></div>
+                    <div class="hearts">
+                        <i class="fa-regular fa-heart heart--empty"></i>
+                        <i class="fa-solid fa-heart heart--full"></i>
+                    </div>
+                </article>
+                </a>
+                <a class="lien" href="Menu-Note.html">
+                <article class="restaurantscard">
+                    <img class="imgcard" src="./images/restaurants/stilmobile.jpg" alt="Image montrant une assiette avec des olives, des croquettes, des chipiron et une sauce">
+                    <div class="new"><p class="new--size">Nouveau</p></div>
+                    <h3 class="titlecards titlecard--size">La note enchantée</h3>
+                    <div class="descmodif"><p class="desccard desccard--size">Charonne</p></div>
+                    <div class="hearts">
+                        <i class="fa-regular fa-heart heart--empty"></i>
+                        <i class="fa-solid fa-heart heart--full"></i>
+                    </div>
+                </article>
+                </a>
+                <a class="lien" href="Menu-Francais.html">
+                <article class="restaurantscard">
+                    <img class="imgcard" src="./images/restaurants/toa-heftibamobile.jpg" alt="Image montrant un assiette d'un plat gastronomique">
+                    <h3 class="titlecard titlecard--size">À la française</h3>
+                    <p class="desccard desccard--size">Cité Rouge</p>
+                    <div class="heart">
+                        <i class="fa-regular fa-heart heart--empty"></i>
+                        <i class="fa-solid fa-heart heart--full"></i>
+                    </div>
+                </article>
+                </a>
+                <a class="lien" href="Menu-Délice.html">
+                <article class="restaurantscard">
+                    <img class="imgcard" src="./images/restaurants/louis-hansel-shotsoflouismobile.jpg" alt="Image montrant une assiette longue avec de la viande et de la sauce">
+                    <h3 class="titlecard titlecard--size">Le délice des sens</h3>
+                    <p class="desccard desccard--size">Folie-Méricourt</p>
+                    <div class="heart">
+                        <i class="fa-regular fa-heart heart--empty"></i>
+                        <i class="fa-solid fa-heart heart--full"></i>
+                    </div>
+                </article>
+                </a>
+        </section>
+        <footer class="footer">
+            <img class="logofooter" src="./images/logo/ohmyfood.png" alt="logo ohmyfood">
+            <div class="descfooter">
+                <div class="iconefooter1"><i class="fa-solid fa-utensils"></i></div>
+                <div class="iconefooter2"><i class="fa-solid fa-handshake-angle"></i></div>             
+                <p class="idfooter">Proposer un restaurant</p>
+                <p class="idfooter">Devenir partenaire</p>
+                <p>Mentions légales</p>
+                <a class="contact" href="mailto:OhMyFood@contact.com">Contact</a>
+            </div>
+        </footer>
         
     </main>
 </body>
