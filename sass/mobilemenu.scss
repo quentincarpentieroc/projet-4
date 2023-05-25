@@ -67,6 +67,32 @@ a{
         line-height: 41px;
     }
 
+.heart{
+    display: flex;
+    justify-content: flex-end;
+    position:relative;
+    right: 8%;
+    bottom: 50px;
+    cursor: pointer;
+    &--empty{
+        position:absolute;
+    }
+    &--full{
+        position:absolute;
+        opacity: 0;
+        background: linear-gradient(#FF79DA, #9356DC);
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: all 400ms;
+    }
+    &:hover &--full{
+        opacity: 1;
+    }
+    &hover &--empty{
+        opacity: 0;
+    }
+}
+
 .titleentrees{
     position: relative;
     top: 15px;
@@ -87,47 +113,82 @@ a{
     width:40px;
     position:relative;
     left:13px;
+    margin-bottom: 12px;
 }
 
-.menucard{
-    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-    border-radius: 15.0431px;
-    position: relative;
-    left: 13px;
-    background-color: white;
-    text-overflow: ellipsis;
-    z-index: 2;
-        &:hover{
-            transition:all 750ms ease;
-        }
-}
-    .menucard--size{
-        width: 92%;
-        height: 69px;
-    }
-
-
-.slide{
-    background: #99E2D0;
-    border-radius: 0px 15px 15px 0px;
-    width: 59px;
+.container {
+    width: 75%;
     height: 69px;
-    position: absolute;
-    left: 286px;
-    bottom: 0.1%;
-    z-index: -1;;
+    position: relative;
+    padding-right: 50px;
+    background-color: #FFFFFF;  
+    border-radius: 1rem;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    padding-left: 15px;
+    cursor: pointer;
+    overflow: hidden; 
+    margin-left: 16px;
+    margin-bottom: 12px;
 }
 
-.check{
+.price-check {
     position: absolute;
-    top: 24px;
-    left: 19px;
-    color: white;
+    right: -60px;
+    top: 0px;
+    display: flex;
+    height: 100%;
+    transition: right 0.5s ease-in;
 }
+
+.container:active .price-check{
+    right: 0%;
+}
+
+.check-container {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 60px;
+    height: 100%;
+    background-color: #99E2D0;
+}
+
+.check{ 
+    color: white;
+    width: 20px;
+    height: 20px;
+}
+
+.price {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    position: relative;
+    bottom: -53%;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.container p,
+.container h3{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.container:active p,
+.container:active h3 {
+    max-width: 50%;
+}
+
+
 .titlemenucard{
     position: relative;
-    left:15px;
-    top:12px;
+    bottom: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
     .titlemenucard--size{
         font-family: 'Roboto';
@@ -139,8 +200,9 @@ a{
 
 .descmenucard{
     position: relative;
-    left:15px;
-    bottom:5px;
+    bottom: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
     .descmenucard--size{
         font-family: 'Roboto';
@@ -151,23 +213,67 @@ a{
         width: 90%;
     }
 
-.count{
-    position: absolute;
-    left: 270px;
-    bottom:20px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 15.0431px;
-    line-height: 18px;
+
+.delay-1{
+    transform-origin: 0% 50%;
+    animation: 0.1s slidein;
 }
+
+.delay-2{
+    transform-origin: 0% 50%;
+    animation: 0.2s slidein;
+}
+
+.delay-3{
+    transform-origin: 0% 50%;
+    animation: 0.3s slidein;
+}
+
+.delay-4{
+    transform-origin: 0% 50%;
+    animation: 0.4s slidein;
+}
+
+.delay-5{
+    transform-origin: 0% 50%;
+    animation: 0.5s slidein;
+}
+
+.delay-6{
+    transform-origin: 0% 50%;
+    animation: 0.6s slidein;
+}
+
+.delay-7{
+    transform-origin: 0% 50%;
+    animation: 0.7s slidein;
+}
+
+.delay-8{
+    transform-origin: 0% 50%;
+    animation: 0.8s slidein;
+}
+
+.delay-9{
+    transform-origin: 0% 50%;
+    animation: 0.9s slidein;
+}
+
+.delay-10{
+    transform-origin: 0% 50%;
+    animation: 0.10s slidein;
+}
+
+@keyframes slidein {
+    from { transform: scaleX(0); }
+    to   { transform: scaleX(1); }
+  }
 
 
 .btncommande{
     position:relative;
     top: 40px;
     left: 95px;
-}
     .btncommande--size{
         width:186px;
         height: 50px;
@@ -188,6 +294,12 @@ a{
         background: linear-gradient(193.33deg, #FF79DA -11.44%  , #9356DC 123.93%);
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     }
+    &:hover{
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #FF79DA -5.2%, #9356DC 110.74%);
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+        border-radius: 25px;
+    }
+}
 
 
 .logofooter {

@@ -6,15 +6,44 @@ body {
   margin: 0px;
 }
 
-:root {
-  --degrade: ;
-}
-
 .header {
   height: 63px;
   width: 100%;
 }
 
+.loader {
+  position: fixed;
+  inset: 0;
+  background-color: #F7F7F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  animation: loader 3s 6s forwards;
+}
+
+@keyframes loader {
+  to {
+    z-index: -10;
+  }
+}
+.loaderbarre {
+  border: 1px transparent;
+  border-radius: 15px;
+  width: 40%;
+  height: 20px;
+  background: #9356DC;
+  animation: disappear 3s 3s forwards;
+}
+
+@keyframes disappear {
+  to {
+    transform: scaleX(0);
+  }
+}
 .logo {
   position: relative;
   left: 26%;
