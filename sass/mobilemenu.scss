@@ -3,7 +3,6 @@ $newcolor: #008766;
 $btncolorone: #9356DC;
 
 body{
-    max-width: 768px;
     display:flex;
     flex-direction: column;
     margin:0px;
@@ -45,7 +44,7 @@ a{
 .imgheader{
     width: 100%;
     height: 275px;
-    position: relative;
+    object-fit: cover;
 }
 
 .menu{
@@ -274,31 +273,18 @@ a{
     position:relative;
     top: 40px;
     left: 95px;
-    .btncommande--size{
-        width:186px;
-        height: 50px;
-    }
-    .btncommande--wide{
-        border-radius: 25px;
-        border:none;
-    }
-    .btncommande--write{
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 19px;
-        color:white;
-    }
-    .btncommande--color{
-        background: linear-gradient(193.33deg, #FF79DA -11.44%  , #9356DC 123.93%);
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    }
-    &:hover{
-        background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #FF79DA -5.2%, #9356DC 110.74%);
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
-        border-radius: 25px;
-    }
+    width:186px;
+    height: 50px;
+    border-radius: 25px;
+    border:none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color:white;
+    background: linear-gradient(193.33deg, #FF79DA -11.44%  , #9356DC 123.93%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -311,7 +297,7 @@ a{
     top: 22px;
 }
 
-.footermenu{
+.footer{
     background-color: #353535;
     color:white;
     width: 100%;
@@ -349,4 +335,137 @@ a{
 .contact {
     text-decoration: none;
     color: white;
-  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+
+    body{
+        width: 100%;
+        background-color: white;
+    }
+
+    .logo{
+        position: relative;
+        left: 33%;
+    }
+
+    .imgheader{
+        width: 100%;
+        height: 275px;
+        object-fit: cover;
+    }
+
+    .menu{
+        width: 70%;
+        position: relative;
+        left: 10%;
+    }
+
+    .container{
+        width: 70%;
+    }
+
+    .btncommande{
+        position: relative;
+        left: 35%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    body{
+        width: 100%;
+        background-color: white;
+    }
+
+    .logo{
+        position: relative;
+        left: 47%;
+    }
+
+    .imgheader{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .menu{
+        width: 70%;
+        position: relative;
+        left: 10%;
+    }
+
+    .title{
+        position: relative;
+        left: 25%
+    }
+
+    .heart{
+        position: relative;
+        right: 38%;
+    }
+
+    .carte{
+        margin-left: 130px;
+        
+        margin-right: 70px;
+        background-color: #F7F7F7;        
+    }
+
+    .container{
+        width: 634px;
+    }
+
+    .btncommande{
+        position: relative;
+        left: 40%;
+    }
+
+    .footer{
+        height: 120px;
+    }
+
+    .logofooter{
+        position: relative;
+        left: 89%;
+        margin-top: 50px;
+    }
+
+    .descfooter{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .iconefooter1{
+        position: relative;
+        left: 16%;
+        top: 21px;
+    }
+
+    .iconefooter2{
+        position: relative;
+        left: 29%;
+        top: 2%;
+        margin-top: 19px;
+    
+    }
+
+    .idfooter{
+        position: relative;
+        left: 15%;
+        margin-right: 50px;
+    }
+
+    .mention{
+        position: relative;
+        left: 13%;
+        margin-bottom: 20px;
+    }
+
+    .contact{
+        position: relative;
+        left: 14%;
+        top: 15px;
+    }
+}
