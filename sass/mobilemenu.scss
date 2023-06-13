@@ -125,22 +125,22 @@ a{
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     padding-left: 15px;
     cursor: pointer;
-    overflow: hidden; 
+    overflow: hidden; /*Sert à cacher la partie qui sort du container*/
     margin-left: 16px;
     margin-bottom: 12px;
 }
 
 .price-check {
     position: absolute;
-    right: -60px;
+    right: -60px; /*Fait sortir une partie de ma div du conteneur*/
     top: 0px;
     display: flex;
     height: 100%;
-    transition: right 0.5s ease-in;
+    transition: right 0.5s ease-in; /*animation de gauche à droite*/
 }
 
 .container:active .price-check{
-    right: 0%;
+    right: 0%; /*replace ma div au clique derrière en respectant l'animation plus haut*/
 }
 
 .check-container {
@@ -173,7 +173,7 @@ a{
 .container h3{
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; /*Ellipsis pour gérer l'écrasement des différentes éléments présent dans le container*/
     max-width: 100%;
 }
 

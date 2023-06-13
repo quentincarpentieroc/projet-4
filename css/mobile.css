@@ -1,9 +1,15 @@
-body {
+html, body {
   width: 100%;
+  overflow-x: hidden;
+}
+
+body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0px;
+  min-width: 320px;
+  overflow-y: visible;
 }
 
 .header {
@@ -23,6 +29,7 @@ body {
   width: 100%;
   opacity: 1;
   animation: loader 3s 6s forwards;
+  overflow: hidden;
 }
 
 @keyframes loader {
@@ -46,7 +53,7 @@ body {
 }
 .logo {
   position: relative;
-  left: 26%;
+  left: 30%;
   right: 9.64%;
   top: 0%;
   bottom: -22.22%;
@@ -69,7 +76,6 @@ body {
   display: flex;
   flex-direction: row;
   background-color: #EAEAEA;
-  margin-left: 0px;
 }
 .location--size {
   width: 100%;
@@ -114,7 +120,7 @@ body {
 
 .btnexplorer {
   position: relative;
-  left: 19%;
+  left: 26%;
 }
 .btnexplorer--size {
   width: 218px;
@@ -161,7 +167,7 @@ body {
   color: #9356DC;
   position: relative;
   left: 14%;
-  bottom: 10px;
+  top: 2px;
 }
 
 .numberfonction {
@@ -171,7 +177,7 @@ body {
   height: 24px;
   border: none;
   position: relative;
-  top: 8px;
+  top: 25px;
   right: 9px;
 }
 
@@ -199,7 +205,7 @@ body {
 .idbtn {
   position: relative;
   left: 85px;
-  bottom: 45px;
+  bottom: 30px;
 }
 .idbtn--size {
   font-family: "Roboto";
@@ -221,6 +227,7 @@ body {
 .lien {
   text-decoration: none;
   color: black;
+  width: 340px;
 }
 
 .titlerestaurants {
@@ -400,7 +407,7 @@ body {
   line-height: 19px;
   position: relative;
   left: 25px;
-  bottom: 14px;
+  bottom: 19px;
 }
 
 .contact {
@@ -409,8 +416,9 @@ body {
 }
 
 @media screen and (min-width: 600px) and (max-width: 1023px) {
-  body {
+  html, body {
     width: 100%;
+    overflow-x: hidden;
   }
   .logo {
     position: relative;
@@ -508,6 +516,7 @@ body {
   }
   .footer {
     height: 120px;
+    width: 100%;
   }
   .logofooter {
     position: relative;

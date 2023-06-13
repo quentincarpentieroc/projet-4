@@ -2,14 +2,18 @@ $cartcolo: #99E2D0;
 $newcolor: #008766;
 $btncolor: #9356DC;
 
-
+html,body{
+    width:100%;
+    overflow-x:hidden;
+}
 
 body{
-    width:100%;
     display:flex;
     flex-direction: column;
     justify-content: center;
-    margin:0px;
+    margin:0px; 
+    min-width: 320px;
+    overflow-y: visible;
 }
 
 .header{
@@ -29,6 +33,7 @@ body{
     width: 100%;
     opacity: 1;
     animation: loader 3s 6s forwards;
+    overflow: hidden;
 }
 
 @keyframes loader{
@@ -50,7 +55,7 @@ body{
 
 .logo{
     position:relative;
-    left: 26%;
+    left: 30%;
     right: 9.64%;
     top: 0%;
     bottom: -22.22%;
@@ -73,7 +78,6 @@ body{
     display: flex;
     flex-direction: row;
     background-color: #EAEAEA;
-    margin-left: 0px;
         &--size{
         width:100%;
         height: 50px;
@@ -117,8 +121,8 @@ body{
 }
 
 .btnexplorer{
-    position:relative;
-    left: 19%;
+    position: relative;
+    left: 26%;
         &--size{
             width: 218px;
             height: 50px;
@@ -168,7 +172,7 @@ body{
     color: $btncolor;
     position: relative;
     left:14%;
-    bottom:10px;
+    top:2px;
 }
 
 .numberfonction{
@@ -178,7 +182,7 @@ body{
     height: 24px;
     border:none;
     position: relative;
-    top:8px;
+    top: 25px;
     right: 9px;
 }
 
@@ -208,7 +212,7 @@ body{
 .idbtn{
     position: relative;
     left: 85px;
-    bottom:45px;
+    bottom: 30px;
     &--size{
         font-family: 'Roboto';
         font-style: normal;
@@ -230,6 +234,7 @@ body{
 .lien{
     text-decoration: none;
     color: black;
+    width: 340px;
 }
 
 .titlerestaurants{
@@ -248,7 +253,6 @@ body{
     border-radius: 15px;
     width:340px;
     height:235px;
-    
 }
 
 .imgcard{
@@ -408,10 +412,11 @@ body{
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    position:relative;
+    position: relative;
     left: 25px;
-    bottom:14px;
+    bottom: 19px;   
 }
+
 
 .contact{
     text-decoration: none;
@@ -421,8 +426,9 @@ body{
 
 @media screen and (min-width: 600px) and (max-width: 1023px) {
     
-    body{
+    html,body{
         width:100%;
+        overflow-x:hidden;
     }
 
     .logo{
@@ -544,7 +550,8 @@ body{
     }
 
     .footer{
-        height: 120px;
+        height: 120px;;
+        width:100%
     }
 
     .logofooter{
