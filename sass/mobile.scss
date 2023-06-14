@@ -2,18 +2,12 @@ $cartcolo: #99E2D0;
 $newcolor: #008766;
 $btncolor: #9356DC;
 
-html,body{
-    width:100%;
-    overflow-x:hidden;
-}
-
 body{
     display:flex;
     flex-direction: column;
     justify-content: center;
     margin:0px; 
-    min-width: 320px;
-    overflow-y: visible;
+    overflow-x: hidden;
 }
 
 .header{
