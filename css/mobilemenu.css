@@ -1,8 +1,10 @@
+@charset "UTF-8";
 body {
   display: flex;
   flex-direction: column;
   margin: 0px;
   background-color: #F6F6F6;
+  overflow-x: hidden;
 }
 
 .nav {
@@ -123,22 +125,22 @@ a {
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   padding-left: 15px;
   cursor: pointer;
-  overflow: hidden;
+  overflow: hidden; /*Sert à cacher la partie qui sort du container*/
   margin-left: 16px;
   margin-bottom: 12px;
 }
 
 .price-check {
   position: absolute;
-  right: -60px;
+  right: -60px; /*Fait sortir une partie de ma div du conteneur*/
   top: 0px;
   display: flex;
   height: 100%;
-  transition: right 0.5s ease-in;
+  transition: right 0.5s ease-in; /*animation de gauche à droite*/
 }
 
 .container:active .price-check {
-  right: 0%;
+  right: 0%; /*replace ma div au clique derrière en respectant l'animation plus haut*/
 }
 
 .check-container {
@@ -171,7 +173,7 @@ a {
 .container h3 {
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis; /*Ellipsis pour gérer l'écrasement des différentes éléments présent dans le container*/
   max-width: 100%;
 }
 
@@ -340,6 +342,7 @@ a {
   body {
     width: 100%;
     background-color: white;
+    overflow-x: hidden;
   }
   .logo {
     position: relative;
@@ -353,7 +356,7 @@ a {
   .menu {
     width: 70%;
     position: relative;
-    left: 10%;
+    left: 15%;
   }
   .container {
     width: 70%;
@@ -367,6 +370,7 @@ a {
   body {
     width: 100%;
     background-color: white;
+    overflow-x: hidden;
   }
   .logo {
     position: relative;
@@ -378,9 +382,9 @@ a {
     object-fit: cover;
   }
   .menu {
-    width: 70%;
+    width: 50%;
     position: relative;
-    left: 10%;
+    left: 25%;
   }
   .title {
     position: relative;
@@ -388,15 +392,19 @@ a {
   }
   .heart {
     position: relative;
-    right: 38%;
+    right: 10%;
   }
   .carte {
     margin-left: 130px;
     margin-right: 70px;
     background-color: #F7F7F7;
   }
+  .container h3,
+  .container p {
+    text-overflow:unset;
+  }
   .container {
-    width: 634px;
+    width: 85%;
   }
   .btncommande {
     position: relative;

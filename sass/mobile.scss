@@ -2,12 +2,15 @@ $cartcolo: #99E2D0;
 $newcolor: #008766;
 $btncolor: #9356DC;
 
+
+
 body{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    margin:0px; 
     overflow-x: hidden;
+    width: 100%;
+    margin: 0;
 }
 
 .header{
@@ -37,7 +40,7 @@ body{
 .loaderbarre{
     border: 1px transparent;
     border-radius: 15px;
-    width: 40%;
+    width: 50%;
     height: 20px;
     background: $btncolor;
     animation: disappear 3s 3s forwards;
@@ -48,7 +51,7 @@ body{
   }
 
 .logo{
-    position:relative;
+    position:absolute;
     left: 30%;
     right: 9.64%;
     top: 0%;
@@ -65,7 +68,7 @@ body{
     color:#353535;
     position: relative;
     top: 18px;
-    left:28%;
+    left:30%;
 }
 
 .location{
@@ -81,7 +84,7 @@ body{
 
 .title-location{
     position: relative;
-    left: 30%;
+    left: 32%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -228,7 +231,7 @@ body{
 .lien{
     text-decoration: none;
     color: black;
-    width: 340px;
+    width: 320px;
 }
 
 .titlerestaurants{
@@ -458,7 +461,9 @@ body{
     .titlerestaurants{
         margin-left: 30px;
     }
+}
 
+@media screen and (min-width:775px){
     .restaurants{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -526,13 +531,6 @@ body{
         margin-left: 197px;
     }
 
-    .restaurants{
-        display: grid;
-        grid-template-columns: 0.5fr 0.5fr;
-        margin-left: 170px;
-        gap: 50px;
-    }
-
     .restaurantscard{
         width: 490px;
         height: 251px;
@@ -543,6 +541,20 @@ body{
         left: 380px;
     }
 
+    
+
+}
+
+@media screen and (min-width: 1125px) {
+    .restaurants{
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        margin-left: 170px;
+        gap: 50px;
+    }
+}
+
+@media screen and (min-width:1344px) {
     .footer{
         height: 120px;;
         width:100%
@@ -592,6 +604,5 @@ body{
         top: 15px;
     }
 
+    
 }
-
-
