@@ -50,6 +50,7 @@ a {
   bottom: 55px;
   border-radius: 15px;
   background-color: #F6F6F6;
+  
 }
 
 .title {
@@ -272,9 +273,9 @@ a {
   }
 }
 .btncommande {
-  position: relative;
+  position:relative;
   top: 40px;
-  left: 95px;
+  left: 28%;
   width: 186px;
   height: 50px;
   border-radius: 25px;
@@ -393,11 +394,6 @@ a {
   .heart {
     position: relative;
     right: 10%;
-  }
-  .carte {
-    margin-left: 130px;
-    margin-right: 70px;
-    background-color: #F7F7F7;
   }
   .container h3,
   .container p {
