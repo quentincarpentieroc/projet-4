@@ -2,7 +2,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow-x: hidden;
   width: 100%;
   margin: 0;
 }
@@ -453,6 +452,7 @@ body {
 @media screen and (min-width: 1024px) {
   body {
     width: 100%;
+    overflow-x: hidden;
   }
   .logo {
     position: relative;
@@ -488,11 +488,22 @@ body {
   .buttonfonctions {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin-left: 150px;
+    justify-content: center;
   }
   .btnfonction {
-    margin-left: 35px;
+    margin-left: 25px;
+  }
+  .numberfonction {
+    position: relative;
+    top: 10px;
+  }
+  .iconefonction {
+    position: relative;
+    top: -10px;
+  }
+  .idbtn {
+    position: relative;
+    bottom: 45px;
   }
   .titlerestaurants {
     margin-left: 197px;

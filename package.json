@@ -4,7 +4,7 @@
   "description": "Sass projet-4",
   "main": "index.js",
   "scripts": {
-    "sass":"sass --watch ./sass/mobilemenu.scss:./css/mobilemenu.css"
+    "sass":"sass --watch ./sass/mobile.scss:./css/mobile.css"
   },
   "author": "qcarpentier",
   "license": "ISC"
